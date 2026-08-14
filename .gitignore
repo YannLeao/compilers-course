@@ -1,0 +1,25 @@
+# JetBrains IDEs
+.idea/
+cmake-build-*/
+
+# Flex generated files
+lex.yy.c
+lex.yy.cc
+
+# Bison generated files
+*.tab.c
+*.tab.cc
+*.tab.h
+*.tab.hh
+*.output
+
+# Compiled files
+*.o
+*.out
+*.exe
+scanner
+parser
+
+# Local tooling
+.cache/
+compile_commands.json

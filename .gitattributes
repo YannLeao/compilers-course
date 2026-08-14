@@ -1,0 +1,18 @@
+# Normalize text files in the repository while preserving platform-native
+# line endings in Windows command files.
+* text=auto
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.sh  text eol=lf
+
+# Flex and Bison sources are programming-language source files. GitHub
+# Linguist already recognizes these extensions; the attributes below make the
+# repository's intent explicit and keep its language statistics predictable.
+*.l   text eol=lf linguist-language=Lex
+*.lex text eol=lf linguist-language=Lex
+*.y   text eol=lf linguist-language=Yacc
+*.yy  text eol=lf linguist-language=Yacc
+
+# Binary documents must not undergo line-ending conversion or textual diffs.
+*.pdf binary
+

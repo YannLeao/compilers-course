@@ -1,0 +1,5 @@
+inicio
+inteiro valor$
+valor = 42 ? 2$
+mostre(’teste com erro’)$
+fim

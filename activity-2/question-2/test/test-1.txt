@@ -1,0 +1,8 @@
+inicio
+inteiro repita$
+inteiro faca2$
+booleano naoSei$
+repita = 1$
+faca2 = 2$
+naoSei = sim$
+fim

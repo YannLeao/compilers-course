@@ -1,0 +1,12 @@
+inicio
+inteiro a$
+inteiro b$
+a = 10$
+b = 20$
+se [a <= b && b >= a] faz {
+mostre(’ordem valida’)$
+}
+se [a != b || a == 10] faz {
+mostre(’comparacao valida’)$
+}
+fim

@@ -1,0 +1,47 @@
+LINHA 1: KEYWORD(inicio)
+LINHA 2: KEYWORD(inteiro)
+LINHA 2: ERRO_LEXICO(123nome): identificador nao pode comecar com digito
+LINHA 2: DOLLAR($)
+LINHA 3: KEYWORD(real)
+LINHA 3: IDENTIFIER(x)
+LINHA 3: DOLLAR($)
+LINHA 4: IDENTIFIER(x)
+LINHA 4: ASSIGN(=)
+LINHA 4: ERRO_LEXICO(10,25,30): numero real malformado
+LINHA 4: DOLLAR($)
+LINHA 5: IDENTIFIER(idade)
+LINHA 5: ASSIGN(=)
+LINHA 5: INTEGER(20)
+LINHA 5: ERRO_LEXICO(@): simbolo nao pertence a MiniLang
+LINHA 5: INTEGER(5)
+LINHA 5: DOLLAR($)
+LINHA 6: IDENTIFIER(preco)
+LINHA 6: ASSIGN(=)
+LINHA 6: ERRO_LEXICO(3.14): o separador decimal deve ser virgula
+LINHA 6: DOLLAR($)
+LINHA 7: IDENTIFIER(total)
+LINHA 7: ASSIGN(=)
+LINHA 7: IDENTIFIER(preco)
+LINHA 7: ERRO_LEXICO(,): simbolo nao pertence a MiniLang
+LINHA 7: INTEGER(2)
+LINHA 7: DOLLAR($)
+LINHA 8: KEYWORD(mostre)
+LINHA 8: LPAREN(()
+LINHA 8: STRING(’fim do calculo’)
+LINHA 8: RPAREN())
+LINHA 8: DOLLAR($)
+LINHA 8: ERRO_LEXICO(#): comentario deve comecar com #coment
+LINHA 9: KEYWORD(texto)
+LINHA 9: IDENTIFIER(s)
+LINHA 9: DOLLAR($)
+LINHA 10: IDENTIFIER(s)
+LINHA 10: ASSIGN(=)
+LINHA 10: ERRO_LEXICO("aspas duplas nao existem aqui"): aspas duplas nao pertencem a MiniLang
+LINHA 10: DOLLAR($)
+LINHA 11: KEYWORD(texto)
+LINHA 11: IDENTIFIER(t)
+LINHA 11: DOLLAR($)
+LINHA 12: IDENTIFIER(t)
+LINHA 12: ASSIGN(=)
+LINHA 12: ERRO_LEXICO(’esta string nao termina$): string sem fechamento
+LINHA 13: ERRO_LEXICO: comentario sem fechamento

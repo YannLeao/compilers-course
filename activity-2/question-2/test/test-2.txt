@@ -1,0 +1,9 @@
+inicio
+inteiro quantidade$
+real preco$
+real resultado$
+quantidade = 10$
+preco = 2,5$
+resultado = quantidade + preco$
+mostre(resultado)$
+fim

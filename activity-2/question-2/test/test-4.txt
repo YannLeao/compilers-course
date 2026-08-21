@@ -1,0 +1,10 @@
+inicio
+inteiro contador$
+#coment comentario de uma linha
+contador = 1$
+{-- comentario
+de varias linhas ---}
+se [contador == 1] faz {
+mostre(’comentarios ignorados’)$
+}
+fim

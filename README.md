@@ -1,54 +1,23 @@
 # Compilers
 
-Repository for practical assignments from the Compilers course. The exercises
-explore the construction of lexical analyzers with Flex and, in future
-assignments, parsers with Bison.
-
-The directories use descriptive English names, as agreed with the professor:
-
-```text
-activity-N/
-├── README.md
-├── activity-N.pdf
-└── question-N/
-    ├── qN.l or qN.y
-    ├── input.txt
-    └── output.txt
-```
+Coursework repository covering lexical analysis with Flex, syntax analysis with
+Bison, and their integration in C.
 
 ## Requirements
 
 - Flex
-- Bison (for future assignments)
-- A GCC-compatible C compiler
+- Bison
+- GCC
+- Make
 
-On Debian- or Ubuntu-based distributions, the tools can be installed with:
+## Activities
 
-```bash
-sudo apt install flex bison build-essential
-```
+- [Activity 1 — Flex fundamentals](activity-1/README.md)
+- [Activity 2 — Lexical analyzers and start conditions](activity-2/README.md)
+- [Activity 3 — Flex and Bison integration](activity-3/README.md)
+- [Activity 4 — Flex and Bison review](activity-4/README.md)
+- [Activity 5 — JSON validator with Flex and Bison](activity-5/README.md)
 
-## Usage
-
-To compile a Flex specification from the repository root:
-
-```bash
-flex activity-1/question-1/q1.l
-gcc lex.yy.c -o scanner
-./scanner
-```
-
-Input ends at EOF (`Ctrl+D` on Linux and macOS). A test file can also be
-redirected to the program:
-
-```bash
-./scanner < activity-1/question-1/input.txt
-```
-
-The exact command may change when a question requires additional options or
-the combined use of Flex and Bison. Such differences will be documented in the
-corresponding assignment README.
-
-## Assignments
-
-- [Assignment 1 — lexical analyzers with Flex](activity-1/README.md)
+Each directory contains the original assignment and its corresponding source
+files, test cases, or written answers. Generated parsers, scanners, and local
+executables are not tracked.

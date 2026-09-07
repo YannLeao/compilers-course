@@ -1,7 +1,7 @@
 %option noyywrap noinput nounput nodefault
 
 %{
-#include "calculator.tab.h"
+#include "calc.tab.h"
 #include <stdlib.h>
 #include <string.h>
 %}

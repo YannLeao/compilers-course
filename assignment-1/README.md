@@ -2,9 +2,9 @@
 
 This assignment introduces complete Flex specifications composed of the
 definitions, rules, and user code sections. The original assignment is
-available in [activity-1.pdf](activity-1.pdf).
+available in [assignment-1.pdf](assignment-1.pdf).
 
-## Questions
+## Exercises
 
 1. Text statistics counter for lines, words, characters, integers,
    floating-point numbers, and punctuation marks.
@@ -12,55 +12,55 @@ available in [activity-1.pdf](activity-1.pdf).
    operators and parentheses.
 3. Lexical analyzer for a small programming language with reserved words,
    identifiers, numbers, and line comments.
-4. Adaptation of question 3 that reads from a file provided as a command-line
+4. Adaptation of exercise 3 that reads from a file provided as a command-line
    argument and handles input errors.
 
-Each question has its own directory containing the `.l` specification, a test
+Each exercise has its own directory containing the `.l` specification, a test
 input, and its corresponding output:
 
 ```text
-activity-1/
-├── question-1/
+assignment-1/
+├── exercise-1/
 │   ├── q1.l
 │   ├── input.txt
 │   └── output.txt
-├── question-2/
+├── exercise-2/
 │   └── ...
-├── question-3/
+├── exercise-3/
 │   └── ...
-└── question-4/
+└── exercise-4/
     └── ...
 ```
 
 ## Build and run
 
-Replace `N` with the question number:
+Replace `N` with the exercise number:
 
 ```bash
-flex activity-1/question-N/qN.l
+flex assignment-1/exercise-N/qN.l
 gcc lex.yy.c -o scanner
-./scanner < activity-1/question-N/input.txt
+./scanner < assignment-1/exercise-N/input.txt
 ```
 
 To compare the program output with the expected result without creating
 additional files:
 
 ```bash
-./scanner < activity-1/question-N/input.txt \
-  | diff -u activity-1/question-N/output.txt -
+./scanner < assignment-1/exercise-N/input.txt \
+  | diff -u assignment-1/exercise-N/output.txt -
 ```
 
-For question 4, pass the input path as an argument instead of redirecting
+For exercise 4, pass the input path as an argument instead of redirecting
 standard input:
 
 ```bash
-./scanner activity-1/question-4/input.txt
+./scanner assignment-1/exercise-4/input.txt
 ```
 
 ## Submission checklist
 
-- [x] Every question contains a complete `.l` file.
-- [x] Every question contains test input and output files.
+- [x] Every exercise contains a complete `.l` file.
+- [x] Every exercise contains test input and output files.
 - [x] Every program builds from a clean copy of the repository.
 - [x] `lex.yy.c`, generated files, and executables are not tracked.
 - [ ] The repository is public and accessible from an anonymous browser window.

@@ -1,7 +1,7 @@
 %option noyywrap noinput nounput nodefault
 
 %{
-#include "declaration.tab.h"
+#include "decl.tab.h"
 #include <stdlib.h>
 #include <string.h>
 %}

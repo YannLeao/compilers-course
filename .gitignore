@@ -19,6 +19,9 @@ lex.yy.cc
 *.exe
 scanner
 parser
+/assignment-3/exercise-1/calc
+/assignment-3/exercise-2/decl
+/assignment-5/valida
 
 # Local tooling
 .cache/

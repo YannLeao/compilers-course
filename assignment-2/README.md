@@ -1,10 +1,10 @@
-# Activity 2 — lexical analyzers and start conditions
+# Assignment 2 — Lexical analyzers and start conditions
 
-This activity builds complete lexical analyzers that report each token, its
+This assignment builds complete lexical analyzers that report each token, its
 lexeme, and source line. The original specification is available in
-[activity-2.pdf](activity-2.pdf).
+[assignment-2.pdf](assignment-2.pdf).
 
-## Questions
+## Exercises
 
 1. A lexer for a selected subset of C++.
 2. A lexer for MiniLang, including reserved words, malformed lexemes,
@@ -15,7 +15,7 @@ assignment, their outputs, and five additional test cases.
 
 ## Build and run
 
-Run the following commands inside either question directory:
+Run the following commands inside either exercise directory:
 
 ```bash
 flex lexer.l
